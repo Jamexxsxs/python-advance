@@ -19,3 +19,10 @@ def generate_numbers(n):
 for num in generate_numbers(5):
     print(num)
 
+# Creating a generator with a function
+def reverse_string(s):
+    for char in reversed(s):
+        yield char
+for char in reverse_string("Python"):
+    print(char)
+
