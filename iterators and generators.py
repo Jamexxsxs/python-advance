@@ -11,3 +11,11 @@ class Countdown:
         return self.start
 for number in Countdown(5):
     print(number)
+
+# Using yield to create a generator
+def generate_numbers(n):
+    for i in range(n):
+        yield i
+for num in generate_numbers(5):
+    print(num)
+
